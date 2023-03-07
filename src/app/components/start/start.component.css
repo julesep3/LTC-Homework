@@ -1,4 +1,4 @@
-body {
+.outer {
 	background-image: url('../../../../images/banner.png');
 	background-attachment: fixed;
 	background-size: cover;
