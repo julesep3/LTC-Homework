@@ -1,0 +1,13 @@
+.outer {
+	height: 100vh;
+	background-image: url('../../../../images/login.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.panel {
+	/* background-color: white; */
+	background-color: rgba(255, 255, 255, 0.63);
+	/* color: white; */
+	padding: 4%;
+}
