@@ -23,21 +23,18 @@ export class LoginComponent implements OnInit{
 
   onLogin() {
     if (this.loginForm.valid) {
-      console.log(this.loginForm.value);
       // send the object to database
       this.auth.login(this.loginForm.value).subscribe({
         next: (res) => {
-          alert(res.message);
+          alert("Log in Successful!");
           this.loginForm.reset();
           this.router.navigate(['employees']);
-          console.log('login success!');
         },
         error: (err) => {
           alert(err.error.message);
         }
       })
     } else {
-      // console.log("Form is not valid");
       // throw error
       this.validateFormFields(this.loginForm);
       alert("Your form is invalid");
