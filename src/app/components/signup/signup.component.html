@@ -1,1 +1,46 @@
-<div class="outer"></div>
+<!-- <div class="outer"></div> -->
+
+<div class="outer">
+	<div class="container">
+		<div class="row">
+			<div class="offset-md-2 mt-5 col-lg-5 col-md-7 offset-lg-4 offset-md-3">
+				<div class="panel border">
+					<div class="panel-heading">
+						<h3 class=" font-weight-bold">Sign Up</h3>
+					</div>
+					<div class="panel-body ">
+						<form [formGroup]="signupForm">
+							<div class="form-group pt-3">
+								<div class="input-field">
+									<input formControlName="email" type="email" placeholder="Email">
+								</div>
+							</div>
+							<small
+								*ngIf="signupForm.controls['email'].dirty && signupForm.hasError('required', 'email')"
+								class="text-danger">**Email is required</small>
+							<div class="form-group pt-3">
+								<div class="input-field">
+									<input formControlName="username" type="text" placeholder="Username">
+								</div>
+							</div>
+							<small
+								*ngIf="signupForm.controls['username'].dirty && signupForm.hasError('required', 'username')"
+								class="text-danger">**Username is required</small>
+							<div class="form-group pt-3">
+								<div class="input-field">
+									<input formControlName="password" type="password" placeholder="Password">
+								</div>
+							</div>
+							<small
+								*ngIf="signupForm.controls['password'].dirty && signupForm.hasError('required', 'password')"
+								class="text-danger">**Password is required</small>
+							<div>
+								<button (click)="onSignup()" type="submit" class="btn btn-primary m-4">Sign Up</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
