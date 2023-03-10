@@ -28,7 +28,7 @@ export class LoginComponent implements OnInit{
         next: (res) => {
           alert("Log in Successful!");
           this.loginForm.reset();
-          this.router.navigate(['employees']);
+          this.router.navigate(['mainPage']);
         },
         error: (err) => {
           alert(err.error.message);

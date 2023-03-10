@@ -4,6 +4,7 @@ import { EmployeesListComponent } from './components/employees/employees-list/em
 import { LoginComponent } from './components/login/login.component';
 import { SignupComponent } from './components/signup/signup.component';
 import { StartComponent } from './components/start/start.component';
+import { MainPageComponent } from './main-page/main-page.component';
 
 const routes: Routes = [
   // path: '' is root 
@@ -22,6 +23,10 @@ const routes: Routes = [
   {
     path: 'signup',
     component: SignupComponent
+  },
+  {
+    path: 'mainPage',
+    component: MainPageComponent
   }
 ];
 
