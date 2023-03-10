@@ -28,6 +28,7 @@ export class LoginComponent implements OnInit{
         next: (res) => {
           alert("Log in Successful!");
           this.loginForm.reset();
+          this.auth.storeToken(res.token);
           this.router.navigate(['mainPage']);
         },
         error: (err) => {
