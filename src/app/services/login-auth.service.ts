@@ -25,4 +25,8 @@ export class LoginAuthService {
   isLoggedIn(): boolean {
     return !!localStorage.getItem('token');
   }
+
+  logout() {
+    localStorage.clear();
+  }
 }

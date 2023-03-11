@@ -12,7 +12,11 @@ export class LoginComponent implements OnInit{
 
   loginForm!: FormGroup;
 
-  constructor(private fb: FormBuilder, private auth: LoginAuthService, private router: Router){}
+  constructor(private fb: FormBuilder, private auth: LoginAuthService, private router: Router){
+    this.auth.logout();
+    console.log("********** Debug Login: " + this.auth.isLoggedIn());
+    console.log("========== Debug Token: " + this.auth.getToken())
+  }
   
   ngOnInit(): void {
     this.loginForm = this.fb.group({
