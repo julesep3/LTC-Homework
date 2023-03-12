@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { LoginAuthService } from './services/login-auth.service';
 
 @Component({
@@ -7,11 +8,12 @@ import { LoginAuthService } from './services/login-auth.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  constructor(private auth: LoginAuthService) { }
+  constructor(private auth: LoginAuthService, private router: Router) { }
   loggedIn = !this.auth.isLoggedIn();
   title = 'LTSHomework';
 
   logout() {
+    this.router.navigate(['']).then(()=> location.reload());
     // remove token/userInfo from localStorage
     localStorage.clear();
   }

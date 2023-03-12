@@ -32,7 +32,8 @@ export class LoginComponent implements OnInit{
           this.loginForm.reset();
           this.auth.storeToken(res.token);
           // location.reload();
-          this.router.navigate(['mainPage']);
+          this.router.navigate(['mainPage']).then(()=> location.reload());
+          
         },
         error: (err) => {
           alert(err.error.message);

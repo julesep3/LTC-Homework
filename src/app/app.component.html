@@ -12,16 +12,10 @@
             In</a>
         </li>
         <li class="nav-item">
-          <a (click)="logout()" *ngIf="loggedIn" class="nav-link active" style="color: white" aria-current="page"
+          <a (click)="logout()" *ngIf="!loggedIn" class="nav-link active" style="color: white" aria-current="page"
             routerLink="">Log Out
           </a>
         </li>
-        <!-- <li class="nav-item">
-          <a class="nav-link active" style="color: white" aria-current="page" routerLink="signup">Sign Up</a>
-        </li> -->
-        <!-- <li class="nav-item">
-          <a class="nav-link active" style="color: white" aria-current="page" routerLink="employees">Employees</a>
-        </li> -->
       </ul>
     </div>
   </div>
