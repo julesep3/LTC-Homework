@@ -7,8 +7,7 @@ import { environment } from 'src/environments/environment';
   providedIn: 'root'
 })
 export class LoginAuthService {
-  private baseApiUrl: string = "http://localhost:5000";
-  // private baseApiUrl: string = environment.baseApiUrl;
+  private baseApiUrl: string = environment.baseApiUrl;
   constructor(private http : HttpClient, private router: Router) { }
   
   login(loginObj: any) {
