@@ -1,6 +1,6 @@
 .outer {
 	height: 100vh;
-	background-image: url('../../../images/internalPages.jpg');
+	background-image: url('../../../../images/internalPages.jpg');
 	background-attachment: fixed;
 	background-size: cover;
 }

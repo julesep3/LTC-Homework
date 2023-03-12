@@ -5,7 +5,7 @@ import { LoginComponent } from './components/login/login.component';
 import { SignupComponent } from './components/signup/signup.component';
 import { StartComponent } from './components/start/start.component';
 import { AuthGuard } from './guards/auth.guard';
-import { MainPageComponent } from './main-page/main-page.component';
+import { MainPageComponent } from './components/main-page/main-page.component';
 
 const routes: Routes = [
   // path: '' is root 

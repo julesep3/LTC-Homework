@@ -14,8 +14,6 @@ export class LoginComponent implements OnInit{
 
   constructor(private fb: FormBuilder, private auth: LoginAuthService, private router: Router){
     this.auth.logout();
-    console.log("********** Debug Login: " + this.auth.isLoggedIn());
-    console.log("========== Debug Token: " + this.auth.getToken())
   }
   
   ngOnInit(): void {
@@ -33,6 +31,7 @@ export class LoginComponent implements OnInit{
           alert("Log in Successful!");
           this.loginForm.reset();
           this.auth.storeToken(res.token);
+          // location.reload();
           this.router.navigate(['mainPage']);
         },
         error: (err) => {

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-// import { LoginAuthService } from './services/login-auth.service';
+import { LoginAuthService } from './services/login-auth.service';
 
 @Component({
   selector: 'app-root',
@@ -7,8 +7,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  // constructor(private auth: LoginAuthService) {}
-
-  // loggedIn = this.auth.isLoggedIn();
+  constructor(private auth: LoginAuthService) { }
+  loggedIn = !this.auth.isLoggedIn();
   title = 'LTSHomework';
+
+  logout() {
+    // remove token/userInfo from localStorage
+    localStorage.clear();
+  }
 }
