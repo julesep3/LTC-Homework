@@ -4,3 +4,9 @@
 	background-attachment: fixed;
 	background-size: cover;
 }
+
+.container {
+	background-color: antiquewhite;
+	padding-top: 10px;
+	
+}
