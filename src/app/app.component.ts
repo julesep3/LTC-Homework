@@ -14,7 +14,6 @@ export class AppComponent {
 
   logout() {
     this.router.navigate(['']).then(()=> location.reload());
-    // remove token/userInfo from localStorage
-    localStorage.clear();
+    this.auth.logout();
   }
 }

@@ -13,7 +13,6 @@ export class LoginComponent implements OnInit{
   loginForm!: FormGroup;
 
   constructor(private fb: FormBuilder, private auth: LoginAuthService, private router: Router){
-    this.auth.logout();
   }
   
   ngOnInit(): void {
@@ -31,7 +30,6 @@ export class LoginComponent implements OnInit{
           alert("Log in Successful!");
           this.loginForm.reset();
           this.auth.storeToken(res.token);
-          // location.reload();
           this.router.navigate(['mainPage']).then(()=> location.reload());
           
         },

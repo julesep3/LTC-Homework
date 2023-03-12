@@ -14,7 +14,7 @@ export class AuthGuard implements CanActivate {
       return true;
     } else {
       this.router.navigate(['login']);
-      alert("Page not accessible until logged in.");
+      alert("Page not currently accessible.\nPlease log in first.");
       return false;
     }
     // return true;
