@@ -2,18 +2,18 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
-import { Contact } from '../models/contact.model';
+import { Location } from '../models/location.model';
 
 @Injectable({
   providedIn: 'root'
 })
-export class ContactsService {
+export class LocationsService {
 
   baseApiUrl = environment.baseApiUrl;
 
   constructor(private http: HttpClient) { }
 
-  getAllContacts(): Observable<Contact[]> {
-    return this.http.get<Contact[]>(this.baseApiUrl + '/contacts');
+  getAllLocations(): Observable <Location[]> {
+    return this.http.get<Location[]>(this.baseApiUrl + '/locations');
   }
 }
