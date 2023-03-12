@@ -30,6 +30,8 @@ export class LoginComponent implements OnInit{
           alert("Log in Successful!");
           this.loginForm.reset();
           this.auth.storeToken(res.token);
+          this.auth.storeUsername(res.username);
+          
           this.router.navigate(['mainPage']).then(()=> location.reload());
           
         },

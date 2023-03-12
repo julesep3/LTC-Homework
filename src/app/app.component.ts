@@ -7,9 +7,12 @@ import { LoginAuthService } from './services/login-auth.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  constructor(private auth: LoginAuthService) { }
+  constructor(private auth: LoginAuthService) {
+    console.log(this.auth.getUserName());
+   }
   loggedIn = !this.auth.isLoggedIn();
   title = 'LTSHomework';
+  username = this.auth.getUserName();
 
   logout() {
     this.auth.logout();

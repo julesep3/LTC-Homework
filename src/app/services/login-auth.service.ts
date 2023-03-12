@@ -22,6 +22,22 @@ export class LoginAuthService {
     return localStorage.getItem('token');
   }
 
+  storeUsername(usernameValue: string) {
+    localStorage.setItem('username', usernameValue);
+  }
+
+  getUserName() {
+    return localStorage.getItem('username');
+  }
+
+  storeEmail(emailValue: string) {
+    localStorage.setItem('email', emailValue);
+  }
+
+  getEmail() {
+    return localStorage.getItem('email');
+  }
+
   isLoggedIn(): boolean {
     return !!localStorage.getItem('token');
   }
