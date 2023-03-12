@@ -9,7 +9,7 @@ import { Company } from '../models/company.model';
 })
 export class CompaniesService {
 
-  baseApiUrl = 'http://localhost:5000';
+  baseApiUrl = environment.baseApiUrl;
   
   constructor(private http: HttpClient) { }
 
