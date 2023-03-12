@@ -9,11 +9,13 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a *ngIf="loggedIn" class="nav-link active" aria-current="page" routerLink="login">Log
+          <a *ngIf="loggedIn" class="nav-link active" aria-current="page" style="color: white;" routerLink="login">Log
             In</a>
         </li>
         <li class="nav-item">
-          <a (click)="logout()" *ngIf="!loggedIn" class="nav-link active" aria-current="page" routerLink="">Log Out
+          <a (click)="logout()" *ngIf="!loggedIn" class="nav-link active" aria-current="page" style="color: white;"
+            routerLink="">Log
+            Out
           </a>
         </li>
       </ul>
