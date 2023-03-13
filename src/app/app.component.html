@@ -13,6 +13,22 @@
             In</a>
         </li>
         <li class="nav-item">
+          <a *ngIf="!loggedIn" class="nav-link active" aria-current="page" style="color: white;"
+            routerLink="mainPage">Main</a>
+        </li>
+        <li class="nav-item">
+          <a *ngIf="!loggedIn" class="nav-link active" aria-current="page" style="color: white;"
+            routerLink="companies">Companies</a>
+        </li>
+        <li class="nav-item">
+          <a *ngIf="!loggedIn" class="nav-link active" aria-current="page" style="color: white;"
+            routerLink="contacts">Contacts</a>
+        </li>
+        <li class="nav-item">
+          <a *ngIf="!loggedIn" class="nav-link active" aria-current="page" style="color: white;"
+            routerLink="locations">Locations</a>
+        </li>
+        <li class="nav-item">
           <a (click)="logout()" *ngIf="!loggedIn" class="nav-link active" aria-current="page" style="color: white;"
             routerLink="">Log
             Out

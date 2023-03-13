@@ -11,6 +11,9 @@ import { SignupComponent } from './components/signup/signup.component';
 import { StartComponent } from './components/start/start.component';
 import { MainPageComponent } from './components/main-page/main-page.component';
 import { TokenInterceptor } from './interceptors/token.interceptor';
+import { CompaniesComponent } from './components/companies/companies.component';
+import { ContactsComponent } from './components/contacts/contacts.component';
+import { LocationsComponent } from './components/locations/locations.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +22,10 @@ import { TokenInterceptor } from './interceptors/token.interceptor';
     LoginComponent,
     SignupComponent,
     StartComponent,
-    MainPageComponent
+    MainPageComponent,
+    CompaniesComponent,
+    ContactsComponent,
+    LocationsComponent
   ],
   imports: [
     BrowserModule,

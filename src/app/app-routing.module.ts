@@ -6,6 +6,9 @@ import { SignupComponent } from './components/signup/signup.component';
 import { StartComponent } from './components/start/start.component';
 import { AuthGuard } from './guards/auth.guard';
 import { MainPageComponent } from './components/main-page/main-page.component';
+import { CompaniesComponent } from './components/companies/companies.component';
+import { ContactsComponent } from './components/contacts/contacts.component';
+import { LocationsComponent } from './components/locations/locations.component';
 
 const routes: Routes = [
   // path: '' is root 
@@ -29,6 +32,21 @@ const routes: Routes = [
   {
     path: 'mainPage',
     component: MainPageComponent,
+    canActivate: [AuthGuard]
+  },
+  {
+    path: 'companies',
+    component: CompaniesComponent,
+    canActivate: [AuthGuard]
+  },
+  {
+    path: 'contacts',
+    component: ContactsComponent,
+    canActivate: [AuthGuard]
+  },
+  {
+    path: 'locations',
+    component: LocationsComponent,
     canActivate: [AuthGuard]
   }
 ];
