@@ -1,9 +1,13 @@
 .outer {
 	background-color: blanchedalmond;
 	height: 100vh;
+	background-image: url('../../../../images/companies.jpg');
+	background-attachment: fixed;
+	background-size: cover;
 }
 
 h1 {
+	color: azure;
 	text-align: center;
 	padding-top: 20px;
 	padding-bottom: 20px;
@@ -11,6 +15,7 @@ h1 {
 
 .container {
 	padding: 50px 30px 30px 30px;
-	background-color: antiquewhite;
+	background-color: rgba(250, 235, 215, 0.98);
 	border-style: solid;
+	border-color: azure;
 }
