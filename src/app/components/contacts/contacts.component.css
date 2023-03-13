@@ -10,8 +10,7 @@ h1 {
 }
 
 .container {
-	padding-top: 50px;
-	padding-bottom: 30px;
+	padding: 50px 30px 30px 30px;
 	background-color: antiquewhite;
 	border-style: solid;
 }

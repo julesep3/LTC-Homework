@@ -7,6 +7,15 @@
 
 .container {
 	background-color: antiquewhite;
-	padding-top: 10px;
-	
+	padding: 20px 30px;
+	border-style: solid;
+}
+
+.spacer-box {
+	height: 20px;
+}
+
+h1 {
+	text-align: center;
+	margin-bottom: 20px;
 }
