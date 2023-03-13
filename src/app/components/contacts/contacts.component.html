@@ -1,1 +1,28 @@
-<p>contacts works!</p>
+<div class="outer">
+	<h1>Contacts</h1>
+
+	<div class="container">
+		<table class="table">
+			<thead>
+				<tr>
+					<th scope="col">ID</th>
+					<th scope="col">Company ID</th>
+					<th scope="col">Name</th>
+					<th scope="col">Phone Number</th>
+					<th scope="col">Email</th>
+					<th scope="col">Contact Description</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr *ngFor="let contact of contacts">
+					<td>{{ contact.id }}</td>
+					<td>{{ contact.companyId }}</td>
+					<td>{{ contact.name }}</td>
+					<td>{{ contact.phoneNumber }}</td>
+					<td>{{ contact.email }}</td>
+					<td>{{ contact.contactDescription }}</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>

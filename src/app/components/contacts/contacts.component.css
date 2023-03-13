@@ -1,0 +1,17 @@
+.outer {
+	background-color: blanchedalmond;
+	height: 100vh;
+}
+
+h1 {
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.container {
+	padding-top: 50px;
+	padding-bottom: 30px;
+	background-color: antiquewhite;
+	border-style: solid;
+}

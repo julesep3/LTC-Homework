@@ -38,7 +38,7 @@ export class MainPageComponent implements OnInit {
       error: (response) => {
         console.log(response);
       }
-    })
+    });
 
     this.locationsService.getAllLocations().subscribe({
       next: (locations) => {
@@ -47,7 +47,7 @@ export class MainPageComponent implements OnInit {
       error: (response) => {
         console.log(response);
       }
-    })
+    });
   }
 
 }

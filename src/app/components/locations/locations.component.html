@@ -1,1 +1,40 @@
-<p>locations works!</p>
+<div class="outer">
+	<h1>Locations</h1>
+
+	<div class="container">
+		<table class="table">
+			<thead>
+				<tr>
+					<th scope="col">ID</th>
+					<th scope="col">Company ID</th>
+					<th scope="col">Name</th>
+					<th scope="col">Street 1</th>
+					<th scope="col">Street 2</th>
+					<th scope="col">City</th>
+					<th scope="col">State</th>
+					<th scope="col">Postal Code</th>
+					<th scope="col">Country</th>
+					<th scope="col">Latitude</th>
+					<th scope="col">Longitude</th>
+					<th scope="col">Location Type</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr *ngFor="let location of locations">
+					<td>{{ location.id }}</td>
+					<td>{{ location.companyId }}</td>
+					<td>{{ location.name }}</td>
+					<td>{{ location.street1 }}</td>
+					<td>{{ location.street2 }}</td>
+					<td>{{ location.city }}</td>
+					<td>{{ location.state }}</td>
+					<td>{{ location.postalCode }}</td>
+					<td>{{ location.country }}</td>
+					<td>{{ location.latitude }}</td>
+					<td>{{ location.longitude }}</td>
+					<td>{{ location.locationType }}</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
