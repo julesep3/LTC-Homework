@@ -16,4 +16,8 @@ export class CompaniesService {
   getAllCompanies(): Observable<Company[]> {
     return this.http.get<Company[]>(this.baseApiUrl + '/companies');
   }
+
+  addCompany(userObj: any) {
+    return this.http.post<any>(`${this.baseApiUrl}/companies`, userObj);
+  }
 }

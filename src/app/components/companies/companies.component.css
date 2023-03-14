@@ -19,3 +19,11 @@ h1 {
 	border-style: solid;
 	border-color: azure;
 }
+
+.spacer-box {
+	height: 20px;
+}
+
+.center-text {
+	text-align: center;
+}

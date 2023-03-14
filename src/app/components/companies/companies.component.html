@@ -19,4 +19,22 @@
 			</tbody>
 		</table>
 	</div>
+	<div class="spacer-box"></div>
+
+	<div class="container center-text">
+		<h3 class=" font-weight-bold">Add Company</h3>
+		<form [formGroup]="addCompaniesForm">
+			<div class="form-group pt-3">
+				<div class="input-field">
+					<input formControlName="name" type="text" placeholder="Company Name">
+				</div>
+			</div>
+			<input type="radio" id="active" formControlName="active" value="true">
+			<label for="active"> Is Active</label><br>
+			<div>
+				<button (click)="onAddCompany()" type="submit" class="btn btn-primary m-4">Add
+					Company</button>
+			</div>
+		</form>
+	</div>
 </div>
